@@ -13,10 +13,10 @@ RUN mvn clean package -DskipTests
 FROM openjdk:17-jdk
 
 WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
+COPY --from=build /app/target/*.war app.war
 
 # Expose port 80 for the application
 EXPOSE 80
 
 # Run the Spring Boot application on port 80
-CMD ["java", "-jar", "app.jar", "--server.port=80"]
+CMD ["java", "-jar", "app.war", "--server.port=80"]
