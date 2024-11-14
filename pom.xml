@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>demo.walter</groupId>
 	<artifactId>projectsapp</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>test</version>
 	<name>projectsapp</name>
 	<description>app for projects manager</description>
 	<url/>
